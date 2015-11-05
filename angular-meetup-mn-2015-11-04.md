@@ -91,10 +91,10 @@ console.log("Hello " + name );
 ```
 
 TypeScript has:
-     - ES6 Classes, 
-     - Adds Private variables and methods. (ActionScript style syntax)
-     - Type inference ( but it can be disabled on the compiler)
-	 - Fun syntactic sugar to add properties by arguments to constructor
+- ES6 Classes, 
+- Adds Private variables and methods. (ActionScript style syntax)
+- Type inference ( but it can be disabled on the compiler)
+- Fun syntactic sugar to add properties by arguments to constructor
 	 
 Getting bogged down in TypeScript
 
@@ -113,11 +113,11 @@ $ npm install -g typescript tsd
 TSD describes non-typescript modules and annotates them with types
 
 ### Editors
-    - Adobe Brackets
-	- Github Atom
-	- Sublime Text
-	- JetBrains (WebStorm!)
-	- Microsoft VS Code
+- Adobe Brackets
+- Github Atom
+- Sublime Text
+- JetBrains (WebStorm!)
+- Microsoft VS Code
 
 ### Typescript in the dev pipeline
 
@@ -174,8 +174,8 @@ We have both types of Brackets, Square *and* round
 
 ### Further Reading
 Check out the starter projects: 
-github.com/pkozlowski-opensource/ng2-play
-github.com/pkozlowski-opensource/ng2-play.ts
-github.com/angular-class/angular2-webpack-starter
+https://github.com/pkozlowski-opensource/ng2-play
+https://github.com/pkozlowski-opensource/ng2-play.ts
+https://github.com/angular-class/angular2-webpack-starter
 
 Check the slides for more. Lots of good learning, community, refs to Jim Cummins' dox.
