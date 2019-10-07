@@ -1,10 +1,10 @@
 Introduction
 ===
 
-Bill Kable - Spring Cloud Trainer
-Alexi - Spring Cloud Services Team
-Bella - Spring Cloud Services Team
-Anand Rao - Spring Cloud Architect
+* Bill Kable - Spring Cloud Trainer
+* Alexi - Spring Cloud Services Team
+* Bella - Spring Cloud Services Team
+* Anand Rao - Spring Cloud Architect
 
 9-5 every day.
 12-1:30 Lunch
@@ -33,8 +33,8 @@ Hold Q&A for breaks
 https://github.com/pivotal-bill-kable/s1-spring-cloud-course-errata
 
 Suggested Sessions 
-[How to live in a post-spring cloud netflix world] (https://springoneplatform.io/2019/sessions/how-to-live-in-a-post-spring-cloud-netflix-world)
-[Building Robust] (https://springoneplatform.io/2019/sessions/building-robust-and-resilient-apps-using-spring-boot-and-resilience4j)
+* [How to live in a post-spring cloud netflix world](https://springoneplatform.io/2019/sessions/how-to-live-in-a-post-spring-cloud-netflix-world)
+* [Building Robust](https://springoneplatform.io/2019/sessions/building-robust-and-resilient-apps-using-spring-boot-and-resilience4j)
 
 Spring Cloud project is huge
 Main focus will be:
