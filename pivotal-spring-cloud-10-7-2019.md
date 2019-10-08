@@ -56,4 +56,46 @@ already considered and "solved" in Workflow Orchestration. Also, mostly
 applicable to blocking REST microservices.  Queues and async change things
 drastically. 
 
+Bulkheads - Isolate parts of the system.
+
+Hystrix Bulkheads are to isolate thread-pools and stop thread-exhaustion in
+one method from running away with all of the threads in other sections of the
+application.
+
+"Load Shedding" - Rejecting requests when we don't have the resources to work 
+on them.
+
+Hystrix allows Thread Pool or Semaphore isolation strategies. Thread Pool is 
+default.
+
+Thread pool isolation uses command pattern, queues and futures to achieve 
+transparency. 
+
+Semaphores
+ * Commands run on originating threads, so thread-local (session) data is
+   preserved
+ * Logical isolation via Semaphores that track concurrent command requests
+ * (Bad) Cannot walk away from timed-out requests. Blocking requests
+   still block the thread.
+
+Hystrix fall back methods *must* have exact same signature of the original
+method.  Naive example: 
+
+```java
+  @HystrixCommand(fallbackMethod="getProjectFromCache")
+  public ProjectInfo getProject(long projectId) {
+    ...
+    projectClientCache.put(projectId, projectInfo);
+    return projectInfo;
+  }
+
+  public ProjectInfo getProjectFromCache(long projectId) {
+    return projectClientCache.get(projectId);
+  }
+```
+
+Circuit Breaker Lifecycle
+ Closed -> Open -> Half-Open
+ Self Healing, attempt to reset occasionally.
+
 
