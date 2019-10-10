@@ -1,9 +1,8 @@
 RSocketMessaging with Spring
 ===
 
-* Rob Winch - Spring SEcurity project Lead
-* 
-* 
+ * Rob Winch - Spring SEcurity project Lead
+ * Brian
 
 AN - Inital expectation: Sounds like ZeroMQ rebranded.
 
@@ -63,7 +62,7 @@ Metadata Mime Types
 Routing Metadata
 Composite Metadata
 
-REQUEST_** frames contain the route, security, etc metadata.  Other frames can, but REQUEST are the important ones in general.
+REQUEST_* frames contain the route, security, etc metadata.  Other frames can, but REQUEST are the important ones in general.
 
 SETUP frame
 ---
@@ -87,3 +86,5 @@ Security
 Add Spring-boot-starter-security and spring.security.rsocket
 
 [Repo](https://github.com/bcozel/spring-flights)
+
+AN: Summary - Sounds like ZeroMQ rebranded. a little friendlier for Java and load balancers. 
